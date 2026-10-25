@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #1f2937;
+    overflow-x: hidden;
+}
+
+.logo-container {
+    text-align: center;
+    padding: 25px 0;
+    background-color: white;
+}
+
+.bni-logo {
+    max-height: 100px;
+    width: auto;
+    display: inline-block;
+}
+
+.hero-banner {
+    background-image: url('https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 570px;
+    position: relative;
+    transition: background-image 1s ease-in-out;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(135deg, rgba(141, 21, 41, 0.95) 0%, rgba(43, 15, 20, 0.9) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-badge {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    backdrop-filter: blur(5px);
+}
+
+.hero-overlay h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+.hero-overlay h2 {
+    font-size: 1.25rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.about-section {
+    background: linear-gradient(135deg, #12263b 0%, #1e3d5e 100%);
+    color: #ffffff;
+    padding: 60px 20px;
+    width: 100%;
+    position: relative;
+    box-shadow: inset 0 20px 40px rgba(0, 0, 0, 0.1); 
+}
+
+.about-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.section-title-white {
+    color: #ffffff;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.about-content p {
+    font-size: 1.05rem;
+    color: rgba(226, 232, 240, 0.95);
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.about-content p strong { color: #ffffff; }
+.about-content p:last-child { margin-bottom: 0; }
+
+.modules-wrapper {
+    max-width: 1000px;
+    margin: 40px auto; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 0 20px;
+}
+
+.section-title {
+    color: #8d1529;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.two-columns-section {
+    display: flex;
+    gap: 25px;
+}
+
+.info-card {
+    flex: 1;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eef1f5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+    padding: 22px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-header i { font-size: 1.3rem; }
+.card-header h3 { font-size: 1.15rem; font-weight: 600; }
+
+.offer-card .card-header { background: #8d1529; }
+.expect-card .card-header { background: linear-gradient(90deg, #12263b 0%, #1e3d5e 100%); } 
+
+.card-content { padding: 25px; }
+
+.card-content p {
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+    color: #4b5563;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-content p i { color: #9ca3af; width: 18px; text-align: center; }
+.card-content p:last-child { margin-bottom: 0; }
+
+.program-section {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.modern-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.timeline-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #8d1529;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.timeline-box:hover {
+    transform: translateX(8px);
+    background: #ffffff;
+    border-left-color: #12263b;
+    box-shadow: 0 4px 15px rgba(18, 38, 59, 0.08);
+}
+
+.time-tag {
+    background: #8d1529;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+.timeline-box:hover .time-tag {
+    background: #12263b;
+}
+
+.activity { 
+    font-size: 0.95rem; 
+    color: #374151; 
+    font-weight: 500; 
+    transition: color 0.3s ease;
+}
+
+.timeline-box:hover .activity {
+    color: #12263b;
+}
+
+.registration-section {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.form-subtitle {
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+
+#registerForm {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.form-floating {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+    transition: color 0.3s;
+}
+
+.form-floating input {
+    width: 100%;
+    padding: 14px 14px 14px 45px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: white;
+    transition: all 0.3s;
+}
+
+.form-floating input:focus {
+    border-color: #8d1529;
+    box-shadow: 0 0 0 4px rgba(141, 21, 41, 0.1);
+    outline: none;
+}
+
+.form-floating input:focus + .input-icon { color: #8d1529; }
+
+#submitBtn {
+    width: 100%;
+    background-color: #8d1529;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 12px rgba(141, 21, 41, 0.2);
+}
+
+#submitBtn:hover {
+    background-color: #721020;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(141, 21, 41, 0.3);
+}
+
+#successMessage {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.hidden { display: none; }
+
+.middle-banner {
+    background-image: url('https://businessevents.visitscotland.com/binaries/content/gallery/business-events/cms-images/2024/07/97704-the-business-events-conversation-1.jpg');
+    background-size: cover;
+    background-color: #8d1529;
+    background-position: center;
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.closing-banner {
+    background-image: url('https://images.unsplash.com/photo-1543165796-5426274afcda?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    position: relative;
+}
+
+.closing-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(135deg, rgba(141, 21, 41, 0.95) 0%, rgba(43, 15, 20, 0.9) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-footer {
+    background-color: #12263b;
+    color: #e5e7eb;
+    padding: 50px 20px 20px 20px;
+    border-top: 4px solid #8d1529;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-col { flex: 1; }
+
+.footer-col h4 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 35px; height: 3px;
+    background-color: #8d1529;
+    border-radius: 2px;
+}
+
+.footer-col p {
+    font-size: 0.9rem;
+    color: #9ca3af;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-col p i { color: #8d1529; width: 16px; }
+.footer-slogan { font-style: italic; font-weight: 500; margin-top: 20px; color: white !important; }
+.map-col { min-width: 300px; }
+
+.footer-bottom {
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid #1f2937;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+@media (max-width: 768px) {
+    .two-columns-section { flex-direction: column; gap: 20px; }
+    .modules-wrapper { margin: 20px auto; gap: 20px; }
+    .program-section, .registration-section, .about-section { padding: 25px; }
+    .hero-overlay h1 { font-size: 1.9rem; }
+    .hero-overlay h2 { font-size: 1rem; }
+    .timeline-box { flex-direction: column; align-items: flex-start; gap: 8px; }
+    .timeline-box:hover { transform: translateY(-2px); }
+    .footer-container { flex-direction: column; gap: 30px; }
+    .map-col { min-width: 100%; }
+}

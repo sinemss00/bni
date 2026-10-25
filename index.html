@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Голяма среща на BNI Лидер Варна</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="logo-container">
+        <img src="logo.png" alt="BNI Logo" class="bni-logo">
+    </div>
+
+    <header class="hero-banner">
+        <div class="hero-overlay">
+            <span class="hero-badge">Ексклузивно Бизнес Събитие</span>
+            <h1>Голяма бизнес среща</h1>
+            <h2>Разширете бизнеса си с BNI Лидер Варна</h2>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="about-container">
+            <h3 class="section-title-white">За организацията BNI</h3>
+            <div class="about-content">
+                <p><strong>BNI (Business Network International)</strong> е най-голямата и успешна организация за бизнес нетуъркинг и обмен на препоръки в света. Нашата уникална концепция позволява на собственици на бизнеси и предприемачи да изграждат дългосрочни и смислени партньорства, споделяйки обща цел – взаимен бизнес растеж по международно доказана система.</p>
+                <p>Дружество <strong>"BNI Лидер Варна"</strong> обединява водещи компании от региона, като прилага златното философско правило <em>"Повече от бизнес" (Givers Gain)</em> – когато помагаш на другите да развиват своя бизнес, те естествено помагат и на твоя.</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="modules-wrapper">
+        
+        <section class="two-columns-section">
+            <div class="info-card offer-card">
+                <div class="card-header">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <h3>Какво предлагаме?</h3>
+                </div>
+                <div class="card-content">
+                    <p><i class="fa-solid fa-handshake"></i> <strong>Събитие:</strong> Среща по BNI система</p>
+                    <p><i class="fa-solid fa-calendar-days"></i> <strong>Дата:</strong> 03 юни 2026 г.</p>
+                    <p><i class="fa-solid fa-clock"></i> <strong>Час:</strong> 10:00 ч. - 13:00 ч.</p>
+                    <p><i class="fa-solid fa-location-dot"></i> <strong>Място:</strong> Хотел "Черно Море", Варна</p>
+                    <p><i class="fa-solid fa-mug-hot"></i> <strong>Кетъринг:</strong> Включено кафе и закуска</p>
+                    <p><i class="fa-solid fa-chart-line"></i> <strong>Възможност:</strong> Нетуъркинг с 40+ мениджъри</p>
+                </div>
+            </div>
+
+            <div class="info-card expect-card">
+                <div class="card-header">
+                    <i class="fa-solid fa-star"></i>
+                    <h3>Какво очакваме?</h3>
+                </div>
+                <div class="card-content">
+                    <p><i class="fa-solid fa-face-smile"></i> <strong>Настроение:</strong> Позитивизъм и усмивка</p>
+                    <p><i class="fa-solid fa-user-tie"></i> <strong>Дрескод:</strong> Бизнес елегантно облекло</p>
+                    <p><i class="fa-solid fa-address-card"></i> <strong>Визитки:</strong> Поне 50 бизнес визитки</p>
+                    <p><i class="fa-solid fa-stopwatch"></i> <strong>Точност:</strong> Пристигане в 10:00 ч.</p>
+                    <p><i class="fa-solid fa-bullhorn"></i> <strong>Представяне:</strong> 30-секундно експозе</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="program-section">
+            <h3 class="section-title">Програма на събитието</h3>
+            <div class="modern-timeline">
+                <div class="timeline-box">
+                    <div class="time-tag">10:00 - 10:30</div>
+                    <p class="activity">Свободен нетуъркинг, регистрация на гости и сутрешно кафе</p>
+                </div>
+                <div class="timeline-box">
+                    <div class="time-tag">10:30 - 12:00</div>
+                    <p class="activity">Официална BNI среща, представяне на бизнесите и обмен на препоръки</p>
+                </div>
+                <div class="timeline-box">
+                    <div class="time-tag">12:00 - 13:00</div>
+                    <p class="activity">Свободни бизнес разговори в тесен кръг и затваряне на сделки</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="registration-section">
+            <h3 class="section-title">Запазете своето място</h3>
+            <p class="form-subtitle">Местата за външни лица са ограничени. Моля, попълнете формата.</p>
+            
+            <form id="registerForm">
+                <div class="form-floating">
+                    <i class="fa-solid fa-user input-icon"></i>
+                    <input type="text" id="fullName" placeholder="Име и фамилия" required>
+                </div>
+
+                <div class="form-floating">
+                    <i class="fa-solid fa-phone input-icon"></i>
+                    <input type="tel" id="phone" placeholder="Телефон" required>
+                </div>
+
+                <div class="form-floating">
+                    <i class="fa-solid fa-envelope input-icon"></i>
+                    <input type="email" id="email" placeholder="Имейл адрес" required>
+                </div>
+
+                <button type="submit" id="submitBtn">
+                    <span>Заяви участие</span> <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+            <div id="successMessage" class="hidden"></div>
+        </section>
+
+    </main>
+
+    <div class="middle-banner"></div>
+
+    <div class="closing-banner">
+        <div class="closing-overlay">
+            <p>"Повече от бизнес – изграждаме дългосрочни партньорства."</p>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Контакти</h4>
+                <p><i class="fa-solid fa-phone"></i> +359 888 123 456</p>
+                <p><i class="fa-solid fa-envelope"></i> info@bni-varna.bg</p>
+                <p><i class="fa-solid fa-globe"></i> www.bni-bulgaria.com</p>
+                <p class="footer-slogan">"Повече от бизнес"</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Локация</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Хотел "Черно Море"</p>
+                <p>бул. "Сливница" №33,</p>
+                <p>гр. Варна, 9000,</p>
+                <p>България</p>
+            </div>
+
+            <div class="footer-col map-col">
+                <h4>Намерете ни на картата</h4>
+                <div class="footer-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11631.882928570642!2d27.925428410266083!3d43.210103206277246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a4538eaaaaaaab%3A0x6a8ab03169542dd5!2zSG90ZWwg4oCcQ2hlcm5vIE1vcmXigJ0!5e0!3m2!1sbg!2sbg!4v1783338908083!5m2!1sbg!2sbg&hl=bg" width="100%" height="150" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 BNI Лидер Варна. Всички права запазени.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
